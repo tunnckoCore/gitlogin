@@ -33,6 +33,13 @@ gitlogin(opts, function cb(err, res) {
 gitlogin(opts)
 .then(console.log)
 .catch(console.error)
+
+// or hybrid
+gitlogin(opts, function cb(err, res) {
+  console.log('FROM CB:', err, res);
+})
+.then(console.log)
+.catch(console.error)
 ```
 
 
