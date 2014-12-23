@@ -18,7 +18,36 @@ var gitlogin = require('gitlogin');
 ```
 
 
-## API / CLI
+## API
+
+## CLI
+```bash
+$ gitlogin --help
+
+  Modern, simplified Github login, CLI and API - generating personal access token. Support promises and node-style callbacks.
+
+  Options
+    --help                   Show this help
+    --version                Current version of package
+    -u | --username          Your Github username, required
+    -p | --password          Your Github password, required
+    -s | --scopes            Scopes for github, not required
+    -n | --note              Note for the app, not required
+    -t | --token-only        If you want to show only token
+    -j | --json         Output full JSON.stringified response
+
+  Usage
+    gitlogin <username> <password> [scopes] [note]
+    gitlogin -p <password> -n [note] -u <username> -s [scopes]
+
+  Examples
+    gitlogin tunnckoCore myPassword 'repo, gist, delete_repo' 'some note for app'
+    gitlogin tunnckoCore myPassword repo,gist,delete_repo 'some note for app'
+    gitlogin tunnckoCore myPassword '' '' true false
+    gitlogin --username tunnckoCore --password myPassword
+    gitlogin --scopes repo,gist,delete_repo -u tunnckoCore -n myAwesomeApp -p myPassword
+    gitlogin -u tunnckoCore -p myPassword
+```
 
 
 ## Author
