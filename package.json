@@ -1,6 +1,6 @@
 {
   "name": "gitlogin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Modern, simplified Github login, CLI and API - generating personal access token. Support promises and node-style callbacks.",
   "scripts": {
     "lint": "jshint . && jscs . --reporter inline",

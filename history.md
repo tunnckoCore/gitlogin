@@ -1,3 +1,6 @@
+## v0.0.1 / December 24, 2014
+- run `npm publish`
+
 ## v0.0.0 / December 24, 2014
 - add coveralls
 - add `bluebird` as devDep
