@@ -28,6 +28,7 @@
     "then-got": "^1.0.0"
   },
   "devDependencies": {
+    "bluebird": "^2.4.2",
     "istanbul-harmony": "^0.3.1",
     "mocha": "^2.0.1",
     "mocha-lcov-reporter": "^0.0.1"
