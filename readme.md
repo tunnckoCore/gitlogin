@@ -11,7 +11,7 @@ gitlogin --help
 
 
 ## Usage
-> For more use-cases see the [tests](./test.js)
+> For more use-cases see the [tests](./test.js). You can run `node example.js` to try it.
 
 ```js
 var gitlogin = require('gitlogin');
