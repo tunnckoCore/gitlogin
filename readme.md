@@ -15,10 +15,29 @@ gitlogin --help
 
 ```js
 var gitlogin = require('gitlogin');
+
+var opts = {
+  //auth: 'username:password'
+  username: 'your github username',
+  password: 'your github pass',
+  scopes: ['repo', 'gist'],
+  note: 'My awesome cli login'
+};
+
+// callback-style
+gitlogin(opts, function cb(err, res) {
+  console.log('FROM CB:', err, res);
+})
+
+// or promise-style
+gitlogin(opts)
+.then(console.log)
+.catch(console.error)
 ```
 
 
 ## API
+
 
 ## CLI
 ```bash
@@ -89,4 +108,4 @@ Released under the [`MIT`][license-url] license.
 
 ***
 
-_Powered and automated by [readdirp + hogan.js](https://github.com/tunnckoCore), December 22, 2014_
+_Powered and automated by [readdirp + hogan.js](https://github.com/tunnckoCore), December 24, 2014_
