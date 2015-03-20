@@ -23,15 +23,14 @@
     "url": "https://github.com/tunnckoCore/gitlogin/blob/master/license.md"
   },
   "dependencies": {
-    "meow": "^2.0.0",
-    "prompt-promise": "^1.0.2",
-    "then-got": "^1.0.0"
+    "github-generate-token": "~1.0.1",
+    "github-token-user": "^1.1.0",
+    "meow": "~3.1.0"
   },
   "devDependencies": {
-    "bluebird": "^2.4.2",
-    "istanbul-harmony": "^0.3.1",
-    "mocha": "^2.0.1",
-    "mocha-lcov-reporter": "^0.0.1"
+    "bluebird": "~2.9.14",
+    "istanbul-harmony": "~0.3.1",
+    "mocha": "~2.2.1"
   },
   "bin": {
     "gitlogin": "cli.js"
